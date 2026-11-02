@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa & Produk Profesional - Solusi Terbaik Anda</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- KODE CSS TAMBAHAN (Custom Styles) -->
+    <style>
+        /* Contoh animasi halus untuk transisi hover */
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- NAVBAR -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-blue-600"><i class="fa-solid fa-rocket mr-2"></i>BrandAnda</h1>
+            <nav class="space-x-6 hidden md:block">
+                <a href="#fitur" class="hover:text-blue-600 transition">Keunggulan</a>
+                <a href="#layanan" class="hover:text-blue-600 transition">Layanan</a>
+                <a href="#testimoni" class="hover:text-blue-600 transition">Testimoni</a>
+            </nav>
+            <a href="#kontak" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition">Hubungi Kami</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Wujudkan Solusi Terbaik untuk Bisnis Anda</h2>
+            <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-8">Kami siap membantu mengembangkan bisnis Anda melalui layanan profesional, cepat, dan terpercaya.</p>
+            <div class="space-x-4">
+                <button onclick="pesanAlert()" class="bg-white text-blue-600 font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition cursor-pointer">Pesan Sekarang</button>
+                <a href="#layanan" class="border border-white text-white font-bold px-6 py-3 rounded-lg hover:bg-white hover:text-blue-600 transition inline-block">Lihat Layanan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN SECTION -->
+    <section id="fitur" class="py-16 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-gray-900">Mengapa Memilih Kami?</h3>
+            <p class="text-gray-500 mt-2">Komitmen kami untuk memberikan hasil terbaik bagi Anda.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-gray-100 card-hover">
+                <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-bolt"></i></div>
+                <h4 class="text-xl font-semibold mb-2">Proses Cepat</h4>
+                <p class="text-gray-600">Pengerjaan efisien dan tepat waktu sesuai dengan tenggat yang disepakati.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-gray-100 card-hover">
+                <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-shield-halved"></i></div>
+                <h4 class="text-xl font-semibold mb-2">Terpercaya & Aman</h4>
+                <p class="text-gray-600">Garansi kepuasan pelanggan serta transparansi penuh selama proses kerja sama.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-gray-100 card-hover">
+                <div class="text-blue-600 text-3xl mb-4"><i class="fa-solid fa-headset"></i></div>
+                <h4 class="text-xl font-semibold mb-2">Dukungan Penuh</h4>
+                <p class="text-gray-600">Tim support kami siap membantu menjawab pertanyaan dan kendala Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYANAN / PRODUK SECTION -->
+    <section id="layanan" class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-900">Layanan Unggulan Kami</h3>
+                <p class="text-gray-500 mt-2">Pilih paket layanan yang sesuai dengan kebutuhan Anda.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 border border-gray-200 card-hover">
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Paket Standar</h4>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4">Rp 500rb</p>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Fitur Dasar Lengkap</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Revisi 2x</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Estimasi pengerjaan 3 hari</li>
+                    </ul>
+                    <button onclick="pilihPaket('Standar')" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer">Pilih Paket</button>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 border-2 border-blue-600 relative card-hover">
+                    <span class="absolute top-4 right-4 bg-blue-100 text-blue-600 text-xs font-bold px-3 py-1 rounded-full">Terlaris</span>
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Paket Premium</h4>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4">Rp 1.2 Juta</p>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Fitur Lengkap & Kustom</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Revisi Tanpa Batas</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Prioritas Dukungan 24/7</li>
+                    </ul>
+                    <button onclick="pilihPaket('Premium')" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer">Pilih Paket</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI SECTION -->
+    <section id="testimoni" class="py-16 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-gray-900">Kata Pelanggan Kami</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <p class="text-gray-600 italic mb-4">"Pelayanan sangat cepat dan hasilnya melebihi ekspektasi. Sangat direkomendasikan!"</p>
+                <h5 class="font-bold text-gray-800">- Budi Santoso</h5>
+                <span class="text-xs text-gray-400">Pemilik Toko Online</span>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <p class="text-gray-600 italic mb-4">"Komunikasi lancar, hasilnya rapi, dan sangat membantu bisnis saya berkembang."</p>
+                <h5 class="font-bold text-gray-800">- Siti Rahma</h5>
+                <span class="text-xs text-gray-400">Freelancer</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / KONTAK -->
+    <footer id="kontak" class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold mb-4">Tertarik Bekerja Sama?</h3>
+            <p class="text-gray-400 mb-6">Hubungi kami melalui kontak di bawah ini untuk konsultasi gratis.</p>
+            <div class="space-x-6 text-2xl mb-8">
+                <a href="https://wa.me/nomorwhatsappanda" target="_blank" class="hover:text-green-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:email@anda.com" class="hover:text-blue-400 transition"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://instagram.com/username" target="_blank" class="hover:text-pink-400 transition"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="text-xs text-gray-500">&copy; 2026 BrandAnda. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- KODE JAVASCRIPT TAMBAHAN -->
+    <script>
+        // Fungsi interaktif saat tombol "Pesan Sekarang" diklik
+        function pesanAlert() {
+            alert("Terima kasih! Anda akan diarahkan untuk melakukan pemesanan.");
+        }
+
+        // Fungsi interaktif saat memilih paket layanan
+        function pilihPaket(namaPaket) {
+            const konfirmasi = confirm("Anda memilih " + namaPaket + ". Lanjutkan ke WhatsApp?");
+            if (konfirmasi) {
+                // Contoh pengalihan otomatis ke WhatsApp (bisa diganti nomor Anda)
+                window.location.href = "https://wa.me/628123456789?text=Halo,%20saya%20tertarik%20dengan%20" + encodeURIComponent(namaPaket);
+            }
+        }
+    </script>
+
+</body>
+</html>
